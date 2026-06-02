@@ -4,75 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fondly — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
   <style>
-    :root { --bg:#faf3e9; --ink:#3a322c; --muted:#9a8d7e; --terracotta:#d4674a; --card:#fffaf3; --line:#ece1d2; }
+    :root {
+      --ink: #2a2a42;
+      --muted: #6b6b88;
+      --accent: #6a72f0;
+      --heart: #ff3b63;
+      --glass: rgba(255, 255, 255, 0.55);
+      --glass-strong: rgba(255, 255, 255, 0.72);
+      --border: rgba(255, 255, 255, 0.7);
+      --display: "Plus Jakarta Sans", system-ui, sans-serif;
+      --body: "Inter", system-ui, sans-serif;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height:1.6; }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
-    h1 { font-size: 2.2rem; margin: 0 0 4px; }
-    .tagline { color: var(--muted); margin: 0 0 8px; }
-    .updated { color: var(--muted); font-size: .9rem; margin: 0 0 32px; }
-    h2 { font-size: 1.25rem; margin: 32px 0 8px; }
-    p, li { font-size: 1.02rem; }
-    a { color: var(--terracotta); }
-    .card { background: var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; margin: 24px 0; }
-    .tldr { font-weight: 700; }
-    footer { color: var(--muted); font-size:.9rem; margin-top: 48px; border-top:1px solid var(--line); padding-top:16px; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--body);
+      line-height: 1.65;
+      background: linear-gradient(150deg, #dcb6f5 0%, #c2c4f8 45%, #9cc6ec 100%) fixed;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
+    .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+    .brand svg { width: 30px; height: 30px; }
+    .brand span { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: -0.02em; }
+    .panel {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 30px 28px 34px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: 0 12px 40px rgba(74, 63, 138, 0.18);
+    }
+    h1 { font-family: var(--display); font-weight: 800; font-size: 2.1rem; letter-spacing: -0.03em; margin: 0 0 6px; }
+    .tagline { color: var(--muted); margin: 0 0 4px; font-weight: 500; }
+    .updated { color: var(--muted); font-size: .88rem; margin: 0 0 26px; }
+    h2 { font-family: var(--display); font-weight: 700; font-size: 1.18rem; letter-spacing: -0.01em; margin: 30px 0 8px; }
+    p, li { font-size: 1.0rem; }
+    a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--glass-strong);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 22px;
+      margin: 22px 0 8px;
+    }
+    .tldr { font-family: var(--display); font-weight: 800; font-size: 1.05rem; margin: 0 0 6px; }
+    .card p:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+    footer { color: var(--muted); font-size: .88rem; margin-top: 40px; border-top: 1px solid rgba(106, 114, 240, 0.18); padding-top: 16px; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p class="tagline">Fondly — stay close to the people you love.</p>
-    <p class="updated">Last updated: 2 June 2026</p>
-
-    <div class="card">
-      <p class="tldr">In short: Fondly collects nothing.</p>
-      <p>Everything you enter stays on your device. There are no accounts, no servers,
-      no analytics, no ads, and no tracking. We never see, transmit, or sell your data.</p>
+    <div class="brand">
+      <svg viewBox="0 0 32 29.6" aria-hidden="true">
+        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" fill="#ff3b63"/>
+      </svg>
+      <span>Fondly</span>
     </div>
 
-    <h2>What data Fondly stores</h2>
-    <p>Fondly lets you keep a private list of people you want to stay in touch with.
-    The names, relationships, contact cadence, last-contact dates, your reminder
-    settings, and your chosen language are saved <strong>only in local storage on
-    your own device</strong>. This information never leaves your phone.</p>
+    <div class="panel">
+      <h1>Privacy Policy</h1>
+      <p class="tagline">Stay close to the people you love.</p>
+      <p class="updated">Last updated: 3 June 2026</p>
 
-    <h2>What we collect</h2>
-    <p>Nothing. Fondly has no backend, requires no account, and does not connect to
-    any server to operate. We do not collect personal data, usage analytics,
-    advertising identifiers, or location.</p>
+      <div class="card">
+        <p class="tldr">In short: Fondly collects nothing about you.</p>
+        <p>Everything you enter stays on your device. There are no accounts, no servers,
+        no analytics, no ads, and no tracking. We never see, transmit, or sell your data.</p>
+      </div>
 
-    <h2>Notifications</h2>
-    <p>If you turn on reminders, Fondly asks your device for permission to show
-    <strong>local notifications</strong>. These are scheduled and shown entirely on
-    your device. No notification content or schedule is sent anywhere.</p>
+      <h2>What Fondly stores</h2>
+      <p>Fondly lets you keep a private list of the people you want to stay in touch with.
+      The names, relationships, how often you'd like to reach out, last-contact dates, your
+      reminder settings, and your chosen language are saved <strong>only in local storage on
+      your own device</strong>. This information never leaves your phone.</p>
 
-    <h2>Third parties</h2>
-    <p>Fondly does not share data with third parties, because it has no data to
-    share and makes no network requests with your information.</p>
+      <h2>What we collect</h2>
+      <p>Nothing. Fondly has no backend, needs no account, and doesn't connect to any server
+      to work. We don't collect your personal data, usage analytics, advertising identifiers,
+      or location.</p>
 
-    <h2>Deleting your data</h2>
-    <p>Because all data is stored locally, uninstalling Fondly permanently removes
-    everything it stored. You can also clear the app's data from your device
-    settings at any time.</p>
+      <h2>Notifications</h2>
+      <p>If you turn on reminders, Fondly asks your device for permission to show you
+      <strong>local notifications</strong>. They're scheduled and shown entirely on your
+      device — no notification content or schedule is ever sent anywhere.</p>
 
-    <h2>Children's privacy</h2>
-    <p>Fondly does not collect any data from anyone, including children.</p>
+      <h2>Third parties</h2>
+      <p>Fondly doesn't share your data with anyone, because it has no data to share and
+      makes no network requests with your information.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>If this policy ever changes, the updated version will be posted on this page
-    with a new "Last updated" date.</p>
+      <h2>Deleting your data</h2>
+      <p>Because everything is stored locally, uninstalling Fondly permanently removes
+      everything it kept. You can also clear the app's data from your device settings at
+      any time.</p>
 
-    <h2>Contact</h2>
-    <p>Questions about this policy? Email
-    <a href="mailto:i9ye49hq6@mozmail.com">i9ye49hq6@mozmail.com</a>.</p>
+      <h2>Children's privacy</h2>
+      <p>Fondly doesn't collect any data from anyone, including children.</p>
 
-    <footer>
-      This policy applies to the Fondly mobile application.
-    </footer>
+      <h2>Changes to this policy</h2>
+      <p>If this policy ever changes, we'll post the updated version on this page with a new
+      "Last updated" date.</p>
+
+      <h2>Contact</h2>
+      <p>Have a question about your privacy? Email us at
+      <a href="mailto:i9ye49hq6@mozmail.com">i9ye49hq6@mozmail.com</a>.</p>
+
+      <footer>This policy applies to the Fondly mobile app.</footer>
+    </div>
   </main>
 </body>
 </html>
